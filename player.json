@@ -1,0 +1,59 @@
+{
+    "front": [
+        {
+            "file": "https://cdn.daicuo.cc/images/ico.player/bg_load.gif",
+            "type": "gif",
+            "link": "",
+            "time": 2,
+            "exhibitionMonitor": "exhibitionMonitor.php",
+            "clickMonitor": "clickMonitor.php"
+        }
+    ],
+    "pause": [
+        {
+            "file": "https://cdn.daicuo.cc/images/ico.player/bg_load.gif",
+            "type": "gif",
+            "link": "",
+            "time": 5,
+            "exhibitionMonitor": "exhibitionMonitor.php",
+            "clickMonitor": "clickMonitor.php"
+        }
+    ],
+    "end": [
+        {
+            "file": "https://cdn.daicuo.cc/images/ico.player/bg_load.gif",
+            "type": "gif",
+            "link": "https://www.daicuo.net",
+            "time": 5,
+            "exhibitionMonitor": "exhibitionMonitor.php",
+            "clickMonitor": "clickMonitor.php"
+        }
+    ],
+    "insert": [
+        {
+            "file": "https://cdn.daicuo.cc/images/ico.player/bg_load.gif",
+            "type": "gif",
+            "link": "https://www.daicuo.net",
+            "time": 5,
+            "exhibitionMonitor": "exhibitionMonitor.php",
+            "clickMonitor": "clickMonitor.php"
+        }
+    ],
+    "inserttime": "15,90",
+    "other": [
+        {
+            "file": "https://cdn.daicuo.cc/images/ico.player/bg_load.gif",
+            "type": "gif",
+            "link": "",
+            "startTime": 3,
+            "time": 5,
+            "exhibitionMonitor": "exhibitionMonitor.php",
+            "clickMonitor": "clickMonitor.php",
+            "align": "center",
+            "vAlign": "bottom",
+            "offsetX": -200,
+            "offsetY": -110,
+            "about": "这是一个gif广告（宽400，高60），当播放器播放startTime=3秒时显示，time=5秒后结束，水平中间对齐align=center,并且在水平轴上向左边偏移200像素，垂直方向是底部对齐并且向上偏移110个像素"
+        }
+    ]
+}

@@ -93,9 +93,9 @@ var feifei = {
 			$("<link>").attr({
 				rel: "stylesheet",
 				type: "text/css",
-				href: cms.root+"Public/jquery.flickity/2.1.1/flickity.min.css"
+				href: cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/css/flickity.min.css"
 			}).appendTo("head");
-			$.getScript(cms.root+"Public/jquery.flickity/2.1.1/flickity.pkgd.min.js", function(){
+			$.getScript(cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/js/flickity.pkgd.min.js", function(){
 				$(".ff-gallery").each(function(i){
 					$index = $(this).find('.gallery-active').index()*1;
 					if($index > 3){
@@ -152,14 +152,14 @@ var feifei = {
 'language':{//简繁转换
 	's2t':function(){
 		if(feifei.browser.language=='zh-hk' || feifei.browser.language=='zh-tw'){
-			$.getScript("//cdn.feifeicms.co/jquery/s2t/0.1.0/s2t.min.js", function(data, status, jqxhr) {
+			$.getScript("https://cdn.jsdelivr.net/gh/zx211/bo/js/s2t.min.js", function(data, status, jqxhr) {
 				$(document.body).s2t();//$.s2t(data);
 			});
 		}
 	},
 	't2s':function(){
 		if(feifei.browser.language=='zh-cn'){
-			$.getScript("//cdn.feifeicms.co/jquery/s2t/0.1.0/s2t.min.js", function(data, status, jqxhr) {
+			$.getScript("https://cdn.jsdelivr.net/gh/zx211/bo/js/s2t.min.js", function(data, status, jqxhr) {
 				$(document.body).t2s();//$.s2t(data);
 			});
 		}
@@ -205,7 +205,7 @@ var feifei = {
 		$.ajaxSetup({
 			cache: true
 		});
-		$.getScript(cms.root+"Public/jquery.lazyload/1.9.7/jquery.lazyload.min.js", function(response, status) {
+		$.getScript(cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/js/jquery.lazyload.min.js", function(response, status) {
 			$("img.ff-img").lazyload({
 				placeholder : cms.root+"Public/images/no.jpg",
 				effect : "fadeIn",
@@ -330,7 +330,7 @@ var feifei = {
 			$.ajaxSetup({
 				cache: true
 			});
-			$.getScript(cms.root+"Public/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js", function(response, status) {
+			$.getScript(cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/js/jquery.autocomplete.min.js", function(response, status) {
 				if($('.ff-search').eq(0).attr('data-sid') == 2){
 					$ajax_url = cms.root+'index.php?g=home&m=search&a=news';
 				}else{

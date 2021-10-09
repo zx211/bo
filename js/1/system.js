@@ -93,9 +93,9 @@ var feifei = {
 			$("<link>").attr({
 				rel: "stylesheet",
 				type: "text/css",
-				href: cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/css/flickity.min.css"
+				href:  "https://cdn.jsdelivr.net/gh/zx211/bo/css/flickity.min.css"
 			}).appendTo("head");
-			$.getScript(cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/js/flickity.pkgd.min.js", function(){
+			$.getScript("https://cdn.jsdelivr.net/gh/zx211/bo/js/flickity.pkgd.min.js", function(){
 				$(".ff-gallery").each(function(i){
 					$index = $(this).find('.gallery-active').index()*1;
 					if($index > 3){
@@ -205,7 +205,7 @@ var feifei = {
 		$.ajaxSetup({
 			cache: true
 		});
-		$.getScript(cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/js/jquery.lazyload.min.js", function(response, status) {
+		$.getScript("https://cdn.jsdelivr.net/gh/zx211/bo/js/jquery.lazyload.min.js", function(response, status) {
 			$("img.ff-img").lazyload({
 				placeholder : cms.root+"Public/images/no.jpg",
 				effect : "fadeIn",
@@ -330,7 +330,7 @@ var feifei = {
 			$.ajaxSetup({
 				cache: true
 			});
-			$.getScript(cms.root+"https://cdn.jsdelivr.net/gh/zx211/bo/js/jquery.autocomplete.min.js", function(response, status) {
+			$.getScript("https://cdn.jsdelivr.net/gh/zx211/bo/js/jquery.autocomplete.min.js", function(response, status) {
 				if($('.ff-search').eq(0).attr('data-sid') == 2){
 					$ajax_url = cms.root+'index.php?g=home&m=search&a=news';
 				}else{
